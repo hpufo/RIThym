@@ -1,4 +1,12 @@
 extends layout
 
 block content
+  nav
+    ul(class="nav nav-pills")
+        li
+            a(href="/#/") Home
+        li
+            a(href="/#/add-location") Add a location
+        
   div(ng-view)
+  

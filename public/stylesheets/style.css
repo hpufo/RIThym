@@ -6,3 +6,12 @@ body {
 a {
   color: #00B7FF;
 }
+
+.del {
+    float: right;
+}
+
+ng-map {
+    height: 450px;
+    width: auto;
+}
