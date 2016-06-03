@@ -117,8 +117,27 @@ app.controller('EditLocationCtrl',['$scope','$http','$location', '$routeParams',
             console.log(response.data);
             $scope.location = response.data;
             
-            for(var i=0; i<response.data.practices.length; i++){
-                
+            var daysDivAry = document.getElementById("daysDiv").children;                       //Stores the days divs into an array
+            for(var i=0; i<daysDivAry.length; i++){                                             //Cycle through each day div
+                var inputCheckBox = daysDivAry[i].childNodes[0];
+                var startTimeInput = daysDivAry[i].childNodes[2].childNodes[1];
+                var endTimeInput = daysDivAry[i].childNodes[2].childNodes[3];
+                for(var j=0; j<response.data.practices.length; j++){                            //Loop through the response days
+                    if(inputCheckBox.defaultValue.includes(response.data.practices[j].day)){    //Check to see if the current checkbox has the pratice day value in it
+                        inputCheckBox.checked = true;                                           //Set's to true if it does
+                        startTimeInput.value = response.data.practices[j].start_time;           //Set's the start time
+                        endTimeInput.value = response.data.practices[j].end_time;               //Set's the end time
+                    }
+                }
             }
-        });
+            
+        });//HTTP.GET
+        
+        $scope.save= function(){
+            $http.put();
+        };
 }]);
+
+function getLocationObject(){
+    
+}

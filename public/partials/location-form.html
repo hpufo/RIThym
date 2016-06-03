@@ -18,13 +18,14 @@
     </div>
     <div class="form-group">
         <label>pratices</label>
-            <input type="checkbox" name="day" value="days.Sunday">Sunday <div class="praticeTime">Start time <input ng-model="days.Sunday.startTime"></input> End Time <input ng-model="days.Sunday.endTime"></input></div>
-            <input type="checkbox" name="day" value="days.Monday">Monday <div class="praticeTime">Start time <input ng-model="days.Monday.startTime"></input> End Time <input ng-model="days.Monday.endTime"></input></div>
-            <input type="checkbox" name="day" value="days.Tuesday">Tuesday <div class="praticeTime">Start time <input ng-model="days.Tuesday.startTime"></input> End Time <input ng-model="days.Tuesday.endTime"></input></div>
-            <input type="checkbox" name="day" value="days.Wednesday">Wednesday <div class="praticeTime">Start time <input ng-model="days.Wednesday.startTime"></input> End Time <input ng-model="days.Wednesday.endTime"></input></div>
-            <input type="checkbox" name="day" value="days.Thursday">Thursday <div class="praticeTime">Start time <input ng-model="days.Thursday.startTime"></input> End Time <input ng-model="days.Thursday.endTime"></input></div>
-            <input type="checkbox" name="day" value="days.Friday">Friday <div class="praticeTime">Start time <input ng-model="days.Friday.startTime"></input> End Time <input ng-model="days.Friday.endTime"></input></div>
-            <input type="checkbox" name="day" value="days.Saturday">Saturday <div class="praticeTime">Start time <input ng-model="days.Saturday.startTime"></input> End Time <input ng-model="days.Saturday.endTime"></input></div>
+        <div id="daysDiv">
+            <div><input type="checkbox" name="day" value="days.Sunday">Sunday <div class="praticeTime">Start time <input ng-model="days.Sunday.startTime"></input> End Time <input ng-model="days.Sunday.endTime"></input></div></div>
+            <div><input type="checkbox" name="day" value="days.Monday">Monday <div class="praticeTime">Start time <input ng-model="days.Monday.startTime"></input> End Time <input ng-model="days.Monday.endTime"></input></div></div>
+            <div><input type="checkbox" name="day" value="days.Tuesday">Tuesday <div class="praticeTime">Start time <input ng-model="days.Tuesday.startTime"></input> End Time <input ng-model="days.Tuesday.endTime"></input></div></div>
+            <div><input type="checkbox" name="day" value="days.Wednesday">Wednesday <div class="praticeTime">Start time <input ng-model="days.Wednesday.startTime"></input> End Time <input ng-model="days.Wednesday.endTime"></input></div></div>
+            <div><input type="checkbox" name="day" value="days.Thursday">Thursday <div class="praticeTime">Start time <input ng-model="days.Thursday.startTime"></input> End Time <input ng-model="days.Thursday.endTime"></input></div></div>
+            <div><input type="checkbox" name="day" value="days.Friday">Friday <div class="praticeTime">Start time <input ng-model="days.Friday.startTime"></input> End Time <input ng-model="days.Friday.endTime"></input></div></div>
+            <div><input type="checkbox" name="day" value="days.Saturday">Saturday <div class="praticeTime">Start time <input ng-model="days.Saturday.startTime"></input> End Time <input ng-model="days.Saturday.endTime"></input></div></div>
         </div>
     </div>
         <input type="button" value="Save" class="btn btn-primary" ng-click="save()"></input>
